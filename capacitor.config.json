@@ -1,0 +1,26 @@
+{
+  "appId": "app.lovable.4c400327eb054c71a3c18c3d104b04ae",
+  "appName": "TradeTap",
+  "webDir": "dist",
+  "server": {
+    "url": "https://4c400327-eb05-4c71-a3c1-8c3d104b04ae.lovableproject.com?forceHideBadge=true",
+    "cleartext": true
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 3000,
+      "launchAutoHide": true,
+      "backgroundColor": "#1e40af",
+      "androidSplashResourceName": "splash",
+      "androidScaleType": "CENTER_CROP",
+      "showSpinner": false,
+      "androidSpinnerStyle": "large",
+      "iosSpinnerStyle": "small",
+      "spinnerColor": "#ffffff",
+      "splashFullScreen": true,
+      "splashImmersive": true,
+      "layoutName": "launch_screen",
+      "useDialog": true
+    }
+  }
+}
