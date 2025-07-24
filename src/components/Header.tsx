@@ -26,7 +26,7 @@ const Header = () => {
               <HardHat className="h-6 w-6 text-white" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-foreground">ConstructConnect</h1>
+              <h1 className="text-xl font-bold text-foreground">TradeTap</h1>
               <Badge variant="secondary" className="text-xs">
                 Direct Hire Platform
               </Badge>

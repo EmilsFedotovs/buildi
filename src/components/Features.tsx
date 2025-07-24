@@ -120,10 +120,10 @@ const Features = () => {
         <div className="bg-gradient-subtle rounded-2xl p-8 lg:p-12">
           <div className="text-center mb-12">
             <h3 className="text-2xl lg:text-3xl font-bold mb-4">
-              Why Choose ConstructConnect?
+              Why Choose TradeTap?
             </h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Join thousands of construction professionals who have transformed their hiring process.
+              Join thousands of construction professionals who have transformed their hiring process with TradeTap.
             </p>
           </div>
 

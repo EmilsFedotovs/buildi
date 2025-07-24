@@ -22,7 +22,7 @@ const Hero = () => {
                 Talent Directly
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                The streamlined platform for contractors, subcontractors, and agencies to find skilled workers. Post jobs, find talent, get paid - all in one place.
+                TradeTap connects construction professionals directly. Post jobs, find talent, get paid - all in one place.
               </p>
             </div>
 
