@@ -1,19 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { 
-  HardHat, 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Facebook, 
-  Twitter, 
-  Linkedin, 
-  Instagram 
-} from "lucide-react";
-
+import { HardHat, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 const Footer = () => {
-  return (
-    <footer className="bg-card border-t border-border">
+  return <footer className="bg-card border-t border-border">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -23,7 +12,7 @@ const Footer = () => {
                 <HardHat className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h3 className="text-lg font-bold text-foreground">buildi</h3>
+                <h3 className="text-lg font-bold text-foreground">Buildi</h3>
                 <Badge variant="secondary" className="text-xs">
                   Direct Hire Platform
                 </Badge>
@@ -159,8 +148,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;

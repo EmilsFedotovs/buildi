@@ -28,7 +28,7 @@ const MobileDownload = () => {
             {/* App Benefits */}
             <div className="space-y-6">
               <div className="space-y-4">
-                <h3 className="text-2xl font-semibold">Why use the TradeTap mobile app?</h3>
+                <h3 className="text-2xl font-semibold">Why use the Buildi mobile app?</h3>
                 <div className="space-y-3">
                   <div className="flex items-start space-x-3">
                     <div className="h-6 w-6 bg-success/10 rounded-full flex items-center justify-center mt-1">
