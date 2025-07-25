@@ -22,7 +22,7 @@ const Hero = () => {
                 Talent Directly
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                TradeTap connects construction professionals directly. Post jobs, find talent, get paid - all in one place.
+                buildi connects construction professionals directly. Post jobs, find talent, get paid - all in one place.
               </p>
             </div>
 

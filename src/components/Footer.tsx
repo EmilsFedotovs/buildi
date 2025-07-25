@@ -23,7 +23,7 @@ const Footer = () => {
                 <HardHat className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h3 className="text-lg font-bold text-foreground">TradeTap</h3>
+                <h3 className="text-lg font-bold text-foreground">buildi</h3>
                 <Badge variant="secondary" className="text-xs">
                   Direct Hire Platform
                 </Badge>
@@ -124,7 +124,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-muted-foreground" />
-                <span className="text-sm text-muted-foreground">support@tradetap.com</span>
+                <span className="text-sm text-muted-foreground">support@buildi.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-muted-foreground" />
@@ -144,7 +144,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground">
-            © 2024 TradeTap. All rights reserved.
+            © 2024 buildi. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
