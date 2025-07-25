@@ -28,7 +28,7 @@ const Header = () => {
             <div>
               <h1 className="text-xl font-bold text-foreground flex items-center gap-2">
                 <HardHat className="h-5 w-5 text-primary" />
-                Buildi
+                buildi
               </h1>
               <Badge variant="secondary" className="text-xs">
                 Direct Hire Platform
