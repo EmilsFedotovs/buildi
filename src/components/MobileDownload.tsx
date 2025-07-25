@@ -1,21 +1,11 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { 
-  Smartphone, 
-  Download, 
-  QrCode,
-  Apple,
-  Play,
-  Globe
-} from "lucide-react";
-
+import { Smartphone, Download, QrCode, Apple, Play, Globe } from "lucide-react";
 const MobileDownload = () => {
   // This would typically be generated dynamically to point to your app store links
   const qrCodeData = "https://4c400327-eb05-4c71-a3c1-8c3d104b04ae.lovableproject.com?forceHideBadge=true";
-
-  return (
-    <section className="py-16 lg:py-20 bg-card border-t border-border">
+  return <section className="py-16 lg:py-20 bg-card border-t border-border">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
@@ -26,9 +16,7 @@ const MobileDownload = () => {
             </Badge>
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               Get the{" "}
-              <span className="text-transparent bg-gradient-to-r from-primary to-accent bg-clip-text">
-                TradeTap App
-              </span>
+              <span className="text-transparent bg-gradient-to-r from-primary to-accent bg-clip-text">Buildi App</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Access jobs on-site, manage your profile, and get paid - all from your mobile device.
@@ -108,14 +96,9 @@ const MobileDownload = () => {
                     <div className="w-48 h-48 mx-auto bg-foreground rounded-lg flex items-center justify-center relative overflow-hidden">
                       {/* QR Code Pattern */}
                       <div className="grid grid-cols-12 gap-0.5 w-full h-full p-4">
-                        {Array.from({ length: 144 }, (_, i) => (
-                          <div
-                            key={i}
-                            className={`aspect-square ${
-                              Math.random() > 0.5 ? 'bg-background' : 'bg-foreground'
-                            }`}
-                          />
-                        ))}
+                        {Array.from({
+                        length: 144
+                      }, (_, i) => <div key={i} className={`aspect-square ${Math.random() > 0.5 ? 'bg-background' : 'bg-foreground'}`} />)}
                       </div>
                       {/* Corner squares */}
                       <div className="absolute top-4 left-4 w-8 h-8 bg-background border-2 border-foreground" />
@@ -139,8 +122,6 @@ const MobileDownload = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default MobileDownload;
