@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Zap, MapPin, Bell } from "lucide-react";
+import { Zap, Shield, CheckCircle, User, Award, FileText } from "lucide-react";
+import workerSelfie from "@/assets/worker-selfie.jpg";
 
 const MobileShowcase = () => {
   return (
@@ -28,37 +29,54 @@ const MobileShowcase = () => {
                     <div className="p-4 space-y-4">
                       {/* Header */}
                       <div className="flex items-center justify-between">
-                        <h3 className="text-lg font-bold">Buildi</h3>
-                        <div className="w-8 h-8 bg-primary/10 rounded-full"></div>
+                        <h3 className="text-lg font-bold">My Profile</h3>
+                        <Badge variant="default" className="text-xs bg-success">
+                          <CheckCircle className="h-3 w-3 mr-1" />
+                          Verified
+                        </Badge>
                       </div>
                       
-                      {/* Job Cards */}
-                      <div className="space-y-3">
-                        <Card className="p-3">
-                          <CardContent className="p-0">
-                            <div className="flex justify-between items-start mb-2">
-                              <h4 className="font-semibold text-sm">Electrician Needed</h4>
-                              <Badge variant="secondary" className="text-xs">$45/hr</Badge>
+                      {/* Profile Section */}
+                      <div className="text-center space-y-3">
+                        <div className="relative w-16 h-16 mx-auto">
+                          <img 
+                            src={workerSelfie} 
+                            alt="Worker profile"
+                            className="w-16 h-16 rounded-full object-cover border-2 border-success"
+                          />
+                          <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-success rounded-full flex items-center justify-center">
+                            <CheckCircle className="h-4 w-4 text-white" />
+                          </div>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-sm">Mike Rodriguez</h4>
+                          <p className="text-xs text-muted-foreground">Licensed Electrician</p>
+                        </div>
+                      </div>
+                      
+                      {/* Verified Cards */}
+                      <div className="space-y-2">
+                        <h5 className="text-xs font-semibold text-muted-foreground uppercase tracking-wide">Verified Credentials</h5>
+                        
+                        <Card className="p-2 border-success/20 bg-success/5">
+                          <CardContent className="p-0 flex items-center space-x-2">
+                            <Shield className="h-4 w-4 text-success" />
+                            <div className="flex-1">
+                              <p className="text-xs font-medium">Electrical License</p>
+                              <p className="text-xs text-muted-foreground">Valid until 2025</p>
                             </div>
-                            <p className="text-xs text-muted-foreground mb-2">Downtown construction site...</p>
-                            <div className="flex items-center text-xs text-muted-foreground">
-                              <MapPin className="h-3 w-3 mr-1" />
-                              2.3 miles away
-                            </div>
+                            <CheckCircle className="h-4 w-4 text-success" />
                           </CardContent>
                         </Card>
                         
-                        <Card className="p-3">
-                          <CardContent className="p-0">
-                            <div className="flex justify-between items-start mb-2">
-                              <h4 className="font-semibold text-sm">Plumber Required</h4>
-                              <Badge variant="secondary" className="text-xs">$50/hr</Badge>
+                        <Card className="p-2 border-success/20 bg-success/5">
+                          <CardContent className="p-0 flex items-center space-x-2">
+                            <Award className="h-4 w-4 text-success" />
+                            <div className="flex-1">
+                              <p className="text-xs font-medium">OSHA 30 Certified</p>
+                              <p className="text-xs text-muted-foreground">Completed 2024</p>
                             </div>
-                            <p className="text-xs text-muted-foreground mb-2">Residential project needs...</p>
-                            <div className="flex items-center text-xs text-muted-foreground">
-                              <MapPin className="h-3 w-3 mr-1" />
-                              1.8 miles away
-                            </div>
+                            <CheckCircle className="h-4 w-4 text-success" />
                           </CardContent>
                         </Card>
                       </div>
@@ -66,8 +84,8 @@ const MobileShowcase = () => {
                       {/* Bottom Navigation */}
                       <div className="absolute bottom-4 left-4 right-4">
                         <div className="bg-card border border-border rounded-lg p-2 flex justify-around">
-                          <div className="w-8 h-8 bg-primary rounded-lg"></div>
                           <div className="w-8 h-8 bg-muted rounded-lg"></div>
+                          <div className="w-8 h-8 bg-primary rounded-lg"></div>
                           <div className="w-8 h-8 bg-muted rounded-lg"></div>
                           <div className="w-8 h-8 bg-muted rounded-lg"></div>
                         </div>
@@ -79,8 +97,8 @@ const MobileShowcase = () => {
                 {/* Floating notification */}
                 <div className="absolute -top-2 -right-4 bg-card border border-border rounded-lg p-2 shadow-lg">
                   <div className="flex items-center space-x-2">
-                    <Bell className="h-4 w-4 text-primary" />
-                    <span className="text-xs font-medium">New job nearby!</span>
+                    <CheckCircle className="h-4 w-4 text-success" />
+                    <span className="text-xs font-medium">Profile verified!</span>
                   </div>
                 </div>
               </div>
@@ -93,49 +111,49 @@ const MobileShowcase = () => {
                   Mobile First
                 </Badge>
                 <h2 className="text-3xl lg:text-4xl font-bold">
-                  Built for workers{" "}
+                  Verified profiles{" "}
                   <span className="text-transparent bg-gradient-to-r from-primary to-accent bg-clip-text">
-                    on the go
+                    you can trust
                   </span>
                 </h2>
                 <p className="text-lg text-muted-foreground">
-                  Our mobile app is designed specifically for construction workers who need to find and apply for jobs while on-site.
+                  Workers can easily upload and verify their construction cards, licenses, and certifications directly from their mobile device.
                 </p>
               </div>
               
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Zap className="h-6 w-6 text-primary" />
+                    <Shield className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-2">Lightning Fast Applications</h3>
+                    <h3 className="text-lg font-semibold mb-2">Instant Verification</h3>
                     <p className="text-muted-foreground">
-                      Apply to jobs in seconds with your saved profile. No lengthy forms or complicated processes.
+                      Upload photos of your construction cards and licenses. Our AI verifies them instantly for authenticity.
                     </p>
                   </div>
                 </div>
                 
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <MapPin className="h-6 w-6 text-primary" />
+                    <FileText className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-2">Location-Based Jobs</h3>
+                    <h3 className="text-lg font-semibold mb-2">Digital Credentials</h3>
                     <p className="text-muted-foreground">
-                      See jobs near your current location and get directions. Perfect for finding work close to where you are.
+                      Keep all your certifications, licenses, and training records organized in one secure digital wallet.
                     </p>
                   </div>
                 </div>
                 
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Bell className="h-6 w-6 text-primary" />
+                    <CheckCircle className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-2">Instant Notifications</h3>
+                    <h3 className="text-lg font-semibold mb-2">Trusted by Contractors</h3>
                     <p className="text-muted-foreground">
-                      Get notified immediately when jobs matching your skills become available in your area.
+                      Verified profiles give contractors confidence in hiring, leading to better job opportunities for workers.
                     </p>
                   </div>
                 </div>
