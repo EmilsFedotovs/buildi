@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import JobPreview from "@/components/JobPreview";
+import MobileShowcase from "@/components/MobileShowcase";
 import MobileDownload from "@/components/MobileDownload";
 import Footer from "@/components/Footer";
 
@@ -12,6 +13,7 @@ const Index = () => {
       <Hero />
       <Features />
       <JobPreview />
+      <MobileShowcase />
       <MobileDownload />
       <Footer />
     </div>
