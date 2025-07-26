@@ -10,6 +10,7 @@ import {
   LogIn
 } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,9 +42,9 @@ const Header = () => {
             <a href="#jobs" className="text-muted-foreground hover:text-foreground transition-colors">
               Browse Jobs
             </a>
-            <a href="#post" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link to="/post-job" className="text-muted-foreground hover:text-foreground transition-colors">
               Post Jobs
-            </a>
+            </Link>
             <a href="#how-it-works" className="text-muted-foreground hover:text-foreground transition-colors">
               How It Works
             </a>
@@ -85,14 +86,14 @@ const Header = () => {
                 <Briefcase className="h-4 w-4 mr-3" />
                 Browse Jobs
               </a>
-              <a 
-                href="#post" 
+              <Link 
+                to="/post-job" 
                 className="flex items-center text-muted-foreground hover:text-foreground transition-colors"
                 onClick={toggleMenu}
               >
                 <Users className="h-4 w-4 mr-3" />
                 Post Jobs
-              </a>
+              </Link>
               <a 
                 href="#how-it-works" 
                 className="flex items-center text-muted-foreground hover:text-foreground transition-colors"
