@@ -8,28 +8,28 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 60 9% 98%;
-    --foreground: 0 0% 8%;
+    --background: 0 0% 97%;
+    --foreground: 0 0% 24%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 8%;
+    --card-foreground: 0 0% 24%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 8%;
+    --popover-foreground: 0 0% 24%;
 
-    --primary: 0 0% 20%;
+    --primary: 0 0% 15%;
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 0 0% 15%;
+    --primary-hover: 0 0% 10%;
 
-    --secondary: 60 9% 94%;
-    --secondary-foreground: 0 0% 8%;
+    --secondary: 214 71% 58%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 60 9% 94%;
+    --muted: 0 0% 93%;
     --muted-foreground: 0 0% 45%;
 
-    --accent: 24 100% 50%;
+    --accent: 25 100% 50%;
     --accent-foreground: 0 0% 100%;
-    --accent-hover: 24 100% 45%;
+    --accent-hover: 25 100% 45%;
 
     --success: 142 76% 36%;
     --success-foreground: 0 0% 100%;
@@ -40,16 +40,16 @@ All colors MUST be HSL.
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 60 9% 90%;
-    --input: 60 9% 95%;
-    --ring: 0 0% 20%;
+    --border: 0 0% 90%;
+    --input: 0 0% 95%;
+    --ring: 25 100% 50%;
 
     /* Construction-specific colors */
-    --construction-blue: 0 0% 20%;
-    --construction-orange: 24 100% 50%;
+    --construction-blue: 214 71% 58%;
+    --construction-orange: 25 100% 50%;
     --construction-gray: 0 0% 45%;
-    --steel-blue: 200 25% 50%;
-    --safety-orange: 24 100% 50%;
+    --steel-blue: 214 71% 58%;
+    --safety-orange: 25 100% 50%;
 
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--steel-blue)));
