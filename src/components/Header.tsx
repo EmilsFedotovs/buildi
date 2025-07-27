@@ -39,16 +39,16 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#jobs" className="text-muted-foreground hover:text-foreground transition-colors">
-              Browse Jobs
-            </a>
-            <Link to="/post-job" className="text-muted-foreground hover:text-foreground transition-colors">
-              Post Jobs
+            <Link to="/post-job" className="text-transparent bg-gradient-to-r from-accent to-secondary bg-clip-text hover:from-accent/80 hover:to-secondary/80 transition-all font-medium">
+              Post a Job
             </Link>
-            <a href="#how-it-works" className="text-muted-foreground hover:text-foreground transition-colors">
-              How It Works
+            <a href="#jobs" className="text-transparent bg-gradient-to-r from-accent to-secondary bg-clip-text hover:from-accent/80 hover:to-secondary/80 transition-all font-medium">
+              Find Work
             </a>
-            <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link to="/how-it-works" className="text-transparent bg-gradient-to-r from-accent to-secondary bg-clip-text hover:from-accent/80 hover:to-secondary/80 transition-all font-medium">
+              How It Works
+            </Link>
+            <a href="#pricing" className="text-transparent bg-gradient-to-r from-accent to-secondary bg-clip-text hover:from-accent/80 hover:to-secondary/80 transition-all font-medium">
               Pricing
             </a>
           </nav>
@@ -78,32 +78,32 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-border">
             <nav className="flex flex-col space-y-4">
-              <a 
-                href="#jobs" 
-                className="flex items-center text-muted-foreground hover:text-foreground transition-colors"
-                onClick={toggleMenu}
-              >
-                <Briefcase className="h-4 w-4 mr-3" />
-                Browse Jobs
-              </a>
               <Link 
                 to="/post-job" 
-                className="flex items-center text-muted-foreground hover:text-foreground transition-colors"
+                className="flex items-center text-transparent bg-gradient-to-r from-accent to-secondary bg-clip-text hover:from-accent/80 hover:to-secondary/80 transition-all font-medium"
                 onClick={toggleMenu}
               >
-                <Users className="h-4 w-4 mr-3" />
-                Post Jobs
+                <Users className="h-4 w-4 mr-3 text-accent" />
+                Post a Job
               </Link>
               <a 
-                href="#how-it-works" 
-                className="flex items-center text-muted-foreground hover:text-foreground transition-colors"
+                href="#jobs" 
+                className="flex items-center text-transparent bg-gradient-to-r from-accent to-secondary bg-clip-text hover:from-accent/80 hover:to-secondary/80 transition-all font-medium"
+                onClick={toggleMenu}
+              >
+                <Briefcase className="h-4 w-4 mr-3 text-accent" />
+                Find Work
+              </a>
+              <Link 
+                to="/how-it-works" 
+                className="flex items-center text-transparent bg-gradient-to-r from-accent to-secondary bg-clip-text hover:from-accent/80 hover:to-secondary/80 transition-all font-medium"
                 onClick={toggleMenu}
               >
                 How It Works
-              </a>
+              </Link>
               <a 
                 href="#pricing" 
-                className="flex items-center text-muted-foreground hover:text-foreground transition-colors"
+                className="flex items-center text-transparent bg-gradient-to-r from-accent to-secondary bg-clip-text hover:from-accent/80 hover:to-secondary/80 transition-all font-medium"
                 onClick={toggleMenu}
               >
                 Pricing

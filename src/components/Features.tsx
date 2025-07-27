@@ -73,8 +73,8 @@ const Features = () => {
           {features.map((feature, index) => <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-border hover:border-primary/50">
               <CardHeader>
                 <div className="flex items-start justify-between mb-4">
-                  <div className="h-12 w-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                    <feature.icon className="h-6 w-6 text-primary" />
+                  <div className="h-12 w-12 bg-accent/10 rounded-lg flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                    <feature.icon className="h-6 w-6 text-accent" />
                   </div>
                   <Badge variant="secondary" className="text-xs">
                     {feature.badge}
