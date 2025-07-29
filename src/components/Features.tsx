@@ -70,7 +70,7 @@ const Features = () => {
 
         {/* Main Features Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {features.map((feature, index) => <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-border hover:border-primary/50">
+          {features.map((feature, index) => <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-border hover:border-primary/50 hover:scale-105 cursor-pointer">
               <CardHeader>
                 <div className="flex items-start justify-between mb-4">
                   <div className="h-12 w-12 bg-accent/10 rounded-lg flex items-center justify-center group-hover:bg-accent/20 transition-colors">

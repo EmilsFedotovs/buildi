@@ -73,7 +73,7 @@ const MobileShowcase = () => {
                           <CardContent className="p-0 flex items-center space-x-2">
                             <Shield className="h-4 w-4 text-success" />
                             <div className="flex-1">
-                              <p className="text-xs font-medium">CSCS Blue Card</p>
+                              <p className="text-xs font-medium">Gold Card</p>
                               <p className="text-xs text-muted-foreground">Valid until 2026</p>
                             </div>
                             <CheckCircle className="h-4 w-4 text-success" />

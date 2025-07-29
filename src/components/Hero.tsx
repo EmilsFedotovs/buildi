@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Users, Briefcase, DollarSign } from "lucide-react";
-import heroImage from "@/assets/construction-hero.jpg";
+import { ArrowRight, Users, Briefcase, PoundSterling } from "lucide-react";
+import constructionVideo from "@/assets/construction-video-frame.jpg";
 
 const Hero = () => {
   return (
@@ -14,12 +14,16 @@ const Hero = () => {
               <Badge variant="outline" className="text-primary border-primary/20">
                 Revolutionizing Construction Hiring
               </Badge>
-              <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
-                Connect{" "}
-                <span className="text-transparent bg-gradient-to-r from-primary to-accent bg-clip-text">
+              <h1 className="text-4xl lg:text-6xl leading-tight">
+                <span className="font-bold text-transparent bg-gradient-to-r from-secondary to-accent bg-clip-text">
+                  Connect
+                </span>{" "}
+                <span className="font-bold text-transparent bg-gradient-to-r from-secondary to-accent bg-clip-text">
                   Construction
                 </span>{" "}
-                Talent Directly
+                <span className="font-bold text-transparent bg-gradient-to-r from-secondary to-accent bg-clip-text">
+                  Talent Directly
+                </span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
                 buildi connects construction professionals directly. Post jobs, find talent, get paid - all in one place.
@@ -42,35 +46,41 @@ const Hero = () => {
               <div className="text-center">
                 <div className="flex items-center justify-center mb-2">
                   <Users className="h-5 w-5 text-primary mr-2" />
-                  <span className="text-2xl font-bold text-foreground">500+</span>
+                  <span className="text-2xl text-transparent bg-gradient-to-r from-secondary to-accent bg-clip-text font-bold">500+</span>
                 </div>
                 <p className="text-sm text-muted-foreground">Active Workers</p>
               </div>
               <div className="text-center">
                 <div className="flex items-center justify-center mb-2">
                   <Briefcase className="h-5 w-5 text-accent mr-2" />
-                  <span className="text-2xl font-bold text-foreground">200+</span>
+                  <span className="text-2xl text-transparent bg-gradient-to-r from-secondary to-accent bg-clip-text font-bold">200+</span>
                 </div>
                 <p className="text-sm text-muted-foreground">Jobs Posted</p>
               </div>
               <div className="text-center">
                 <div className="flex items-center justify-center mb-2">
-                  <DollarSign className="h-5 w-5 text-success mr-2" />
-                  <span className="text-2xl font-bold text-foreground">$2M+</span>
+                  <PoundSterling className="h-5 w-5 text-success mr-2" />
+                  <span className="text-2xl text-transparent bg-gradient-to-r from-secondary to-accent bg-clip-text font-bold">£2M+</span>
                 </div>
                 <p className="text-sm text-muted-foreground">Payments Processed</p>
               </div>
             </div>
           </div>
 
-          {/* Hero Image */}
+          {/* Hero Video */}
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-construction">
-              <img
-                src={heroImage}
-                alt="Construction professionals collaborating"
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
                 className="w-full h-auto object-cover"
-              />
+                poster={constructionVideo}
+              >
+                <source src={constructionVideo} type="image/jpeg" />
+                Your browser does not support the video tag.
+              </video>
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
             </div>
             
@@ -78,7 +88,7 @@ const Hero = () => {
             <div className="absolute -bottom-6 -left-6 bg-card p-6 rounded-xl shadow-card border">
               <div className="flex items-center space-x-3">
                 <div className="h-12 w-12 bg-success/10 rounded-lg flex items-center justify-center">
-                  <DollarSign className="h-6 w-6 text-success" />
+                  <PoundSterling className="h-6 w-6 text-success" />
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Direct Payments</p>
